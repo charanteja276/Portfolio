@@ -62,14 +62,15 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
-            
-            <Button 
-              size="sm" 
-              className="glass hover:glow-primary transition-all duration-300"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <a href='https://drive.google.com/file/d/1Yg_L8reXWGHOaxdIL4mDOOs4TZBxW_LP/view?usp=drivesdk'>
+              <Button 
+                size="sm" 
+                className="glass hover:glow-primary transition-all duration-300"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

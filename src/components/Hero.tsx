@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Download, Github, Linkedin, Mail , Code } from 'lucide-react';
 import heroAvatar from '@/assets/hero-avatar.jpg';
+import { useHref } from 'react-router-dom';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/charan', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/charan', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:charan@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/charanteja276', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/charan-teja-potru-008875294/n', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:charanteja276571@example.com', label: 'Email' },
+    { icon: Code , href:'https://leetcode.com/u/charanteja276571/' ,label:'Leetcode'}
   ];
 
   return (
@@ -92,18 +94,22 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="flex flex-wrap gap-4 justify-center lg:justify-start mb-12"
               >
-                <Button size="lg" className="glass hover:glow-primary transition-all duration-300">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Get In Touch
-                </Button>
-                <Button 
-                  variant="secondary" 
-                  size="lg" 
-                  className="glass hover:glow-secondary transition-all duration-300"
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Resume
-                </Button>
+                <a href='mailto:charanteja276571@example.com'>
+                  <Button size="lg" className="glass hover:glow-primary transition-all duration-300">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Get In Touch
+                  </Button>
+                </a>
+                <a href="https://drive.google.com/file/d/1Yg_L8reXWGHOaxdIL4mDOOs4TZBxW_LP/view?usp=drivesdk" download target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    variant="secondary" 
+                    size="lg" 
+                    className="glass hover:glow-secondary transition-all duration-300"
+                  >
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Resume
+                  </Button>
+                </a>
               </motion.div>
 
               {/* Social Links */}

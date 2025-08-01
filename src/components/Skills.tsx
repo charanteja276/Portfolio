@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+import { LucideMoveLeft } from 'lucide-react';
 import { useRef } from 'react';
 
 const Skills = () => {
@@ -8,33 +9,33 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Framer Motion", level: 80 }
+        { name: "Cpp", level: 95 },
+        { name: "Java", level: 90 },
+        { name: "Python", level: 85 },
+        { name: "Javascript", level: 92 },
+        { name: "C#", level: 80 }
       ]
     },
     {
-      title: "Backend", 
+      title: "Web Technologies / Databases", 
       skills: [
+        { name : "React.js",level:90},
         { name: "Node.js", level: 88 },
         { name: "Express.js", level: 85 },
         { name: "MongoDB", level: 82 },
-        { name: "PostgreSQL", level: 78 },
-        { name: "GraphQL", level: 75 }
+        { name: "SQL", level: 88 },
       ]
     },
     {
-      title: "Tools & DevOps",
+      title: "Tools",
       skills: [
         { name: "Git", level: 90 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 70 },
-        { name: "Vercel", level: 85 },
-        { name: "Figma", level: 80 }
+        { name: "Github", level: 88 },
+        { name: "Weka", level: 70 },
+        { name: "Postman", level: 85 },
+        { name: "Ms Power BI", level: 80 }
       ]
     }
   ];

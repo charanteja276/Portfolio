@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, Code, Zap, Palette, Brain } from 'lucide-react';
+import { ExternalLink, Github, Code, Zap, Palette, Brain,CalendarDays } from 'lucide-react';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -10,59 +10,33 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Powered Task Manager",
-      description: "Intelligent task management with ML-driven priority suggestions and automated categorization.",
-      tech: ["React", "TypeScript", "Python", "TensorFlow", "MongoDB"],
-      liveUrl: "https://ai-tasks.demo.com",
-      githubUrl: "https://github.com/charan/ai-task-manager",
+      title: "Heart Disease Prediction",
+      description: "predicts the risk of heart disease based on user health inputs using a machine learning model.",
+      tech: ["Python", "NumPy", "Pandas" , "Matplotlib" , "scikit-learn"],
+      liveUrl: "https://github.com/charanteja276/Heart_Disease_prediction",
+      githubUrl: "https://github.com/charanteja276/Heart_Disease_prediction",
       icon: Brain,
       gradient: "from-purple-500 to-pink-500"
     },
     {
-      title: "Real-time Collaboration Platform", 
-      description: "WebRTC-based platform for seamless team collaboration with live editing and video chat.",
-      tech: ["Next.js", "Socket.io", "WebRTC", "PostgreSQL", "Redis"],
-      liveUrl: "https://collab-platform.demo.com",
-      githubUrl: "https://github.com/charan/collab-platform",
+      title: "Real-time Auction Bidding Platform", 
+      description: "A real-time auction bidding platform where users can place bids on listed items and compete to win before the timer ends.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "tailwindcss"],
+      liveUrl: "https://sunny-croissant-0c0425.netlify.app/",
+      githubUrl: "https://github.com/charanteja276/QuickBid",
       icon: Zap,
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      title: "Design System Generator",
-      description: "Automated design system creation tool with Figma integration and component generation.",
+      title: "Event Managment System",
+      description: "An event management system that allows users to create, manage, and register for events",
       tech: ["Vue.js", "Node.js", "Figma API", "Tailwind CSS", "Docker"],
-      liveUrl: "https://design-gen.demo.com", 
-      githubUrl: "https://github.com/charan/design-generator",
-      icon: Palette,
+      liveUrl: "https://github.com/charanteja276/Event-Management-system", 
+      githubUrl: "https://github.com/charanteja276/Event-Management-system",
+      icon: CalendarDays,
       gradient: "from-green-500 to-teal-500"
     },
-    {
-      title: "Blockchain Analytics Dashboard",
-      description: "Real-time cryptocurrency analytics with portfolio tracking and market insights.",
-      tech: ["React", "D3.js", "Web3.js", "Express.js", "CoinGecko API"],
-      liveUrl: "https://crypto-analytics.demo.com",
-      githubUrl: "https://github.com/charan/crypto-dashboard", 
-      icon: Code,
-      gradient: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Smart Home IoT Controller",
-      description: "IoT device management system with voice control and automated scheduling.",
-      tech: ["React Native", "MQTT", "Arduino", "Firebase", "Google Assistant"],
-      liveUrl: "https://smart-home.demo.com",
-      githubUrl: "https://github.com/charan/smart-home",
-      icon: Zap,
-      gradient: "from-indigo-500 to-purple-500"
-    },
-    {
-      title: "E-learning Microlearning Platform", 
-      description: "Bite-sized learning modules with adaptive algorithms and progress tracking.",
-      tech: ["Svelte", "FastAPI", "PostgreSQL", "Redis", "Stripe API"],
-      liveUrl: "https://microlearn.demo.com",
-      githubUrl: "https://github.com/charan/microlearning",
-      icon: Brain,
-      gradient: "from-pink-500 to-rose-500"
-    }
+    
   ];
 
   return (
@@ -155,10 +129,12 @@ const Projects = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
+        <a href='https://github.com/charanteja276' target='_blank'>
           <Button size="lg" className="glass hover:glow-accent transition-all duration-300">
             <Github className="mr-2 h-5 w-5" />
             View All Projects on GitHub
           </Button>
+        </a>
         </motion.div>
       </div>
     </section>

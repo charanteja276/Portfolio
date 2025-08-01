@@ -24,20 +24,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "charan@example.com",
-      href: "mailto:charan@example.com"
+      value: "charanteja276571@example.com",
+      href: "mailto:charanteja276571@example.com"
     },
     {
       icon: Phone,
       label: "Phone", 
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+919390598046",
+      href: "tel:+919390598046"
     },
     {
       icon: MapPin,
-      label: "Location",
-      value: "San Francisco, CA",
-      href: "https://maps.google.com/?q=San+Francisco,CA"
+      label: "Hyderabad",
+      value: "Telangana , India",
+      href: "https://maps.app.goo.gl/wG6EYanfvfY7pKkx9?g_st=aw"
     }
   ];
 
