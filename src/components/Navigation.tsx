@@ -102,6 +102,7 @@ const Navigation = () => {
                   {label}
                 </button>
               ))}
+              <a href="https://drive.google.com/file/d/1Yg_L8reXWGHOaxdIL4mDOOs4TZBxW_LP/view?usp=drivesdk">
               <Button 
                 size="sm" 
                 className="glass hover:glow-primary transition-all duration-300 w-fit"
@@ -109,6 +110,7 @@ const Navigation = () => {
                 <Download className="mr-2 h-4 w-4" />
                 Resume
               </Button>
+              </a>
             </div>
           </motion.div>
         )}
